@@ -1,11 +1,12 @@
 Cyc XSDs
 --------
 
-Some Cyc results and output are available as XML. This collection of XSDs describe the most 
+Some Cyc results and output are available as XML. This collection of XSDs describe the most
 commonly-used Cyc XML outputs.
 
-The `schemaLocation` attributes for the XSDs in this directory assume that other Cyc XSDs are 
-available under <http://dev.cyc.com/xsd/>
+These resources are available on GitHub in the [cyc-xml](https://github.com/cycorp/cyc-xml)
+repository. The `schemaLocation` attributes for the XSDs in this directory assume that other Cyc
+XSDs are available under <http://dev.cyc.com/xsd/>.
 
 * [Cyc Concepts](cycconcepts.xsd)
 
@@ -17,7 +18,7 @@ available under <http://dev.cyc.com/xsd/>
 
 * [CycL Query](cyclquery.xsd)
 
-    XML schema for CycL query specifications, including query sentence, microtheory, and inference 
+    XML schema for CycL query specifications, including query sentence, microtheory, and inference
     parameters.
 
 * [Formula Template](formulatemplate.xsd)
@@ -35,4 +36,5 @@ available under <http://dev.cyc.com/xsd/>
 * [Text Processing](textprocessing.xsd)
 
      XML schema for text processing results.
+
 
