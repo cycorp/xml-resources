@@ -1,38 +1,12 @@
-Cyc XSDs
---------
+Cyc XML Support
+---------------
 
-Some Cyc results and output are available as XML. This collection of XSDs describe the most 
-commonly-used Cyc XML outputs.
+This is a collection of XML resources which are utilized by Cyc and its libraries.
 
-The `schemaLocation` attributes for the XSDs in this directory assume that other Cyc XSDs are 
-available under <http://dev.cyc.com/xsd/>
+These resources are available on the web under:
 
-* [Cyc Concepts](cycconcepts.xsd)
+* Cyc XSDs: <http://dev.cyc.com/xsd/>
+* Cyc DTDs: <http://dev.cyc.com/dtd/>
+* Cyc XSL: <http://dev.cyc.com/xsl/>
 
-    XML schema for Cyc concepts.
-
-* [Cyc ML](cycml.xsd)
-
-    XML schema for CycL terms, including constants, formulas, assertions, etc.
-
-* [CycL Query](cyclquery.xsd)
-
-    XML schema for CycL query specifications, including query sentence, microtheory, and inference 
-    parameters.
-
-* [Formula Template](formulatemplate.xsd)
-
-    XML schema for formula templates. Used for loading CycL query specifications from a Cyc image.
-
-* [Lightweight Result Set](lightweightresultset.xsd)
-
-     XML schema for minimal result sets used for autocomplete and simple query results.
-
-* [Proof View](proofview.xsd)
-
-     XML schema for proof-views, a natural-language justification format.
-
-* [Text Processing](textprocessing.xsd)
-
-     XML schema for text processing results.
 
