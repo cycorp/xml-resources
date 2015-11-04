@@ -1,7 +1,7 @@
-Cyc XML Support
----------------
+Cyc XML Resources
+-----------------
 
-This is a collection of XML resources which are utilized by Cyc and its libraries.
+A collection of XML resources which are utilized by Cyc and its libraries.
 
 These resources are available on the web under:
 
