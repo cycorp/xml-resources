@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>com.cyc</groupId>
+    <artifactId>cyc-default-config-parent</artifactId>
+    <version>1.0.0-rc1</version>
+    <relativePath>../../maven-resources/parent-poms/default-config-parent</relativePath>
+  </parent>
+  
+  <groupId>com.cyc.xml</groupId>
+  <artifactId>cyc-jaxb-parent</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  
+  <!-- ====  Metadata & contact info  ========================================================== -->
+  
+  <name>JAXB Parent</name>
+  <description>
+    Provides general configuration Cycorp's JAXB projects.
+  </description>
+  <url>http://dev.cyc.com/</url>
+  
+  <scm>
+    <connection>scm:git:git@github.com:cycorp/xml-resources.git</connection>
+    <developerConnection>scm:git:git@github.com:cycorp/xml-resources.git</developerConnection>
+    <url>https://github.com/cycorp/xml-resources</url>
+  </scm>
+  
+  <issueManagement>
+    <url>https://github.com/cycorp/xml-resources/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+  
+  <inceptionYear>2015</inceptionYear>
+  
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  
+  <organization>
+    <name>Cycorp, Inc.</name>
+    <url>http://www.cyc.com</url>
+  </organization>
+  
+  <developers>
+    <developer>
+      <name>Cycorp API Team</name>
+      <email>dev-team@cyc.com</email>
+      <organization>Cycorp, Inc.</organization>
+      <organizationUrl>http://www.cyc.com</organizationUrl>
+    </developer>
+  </developers>
+  
+  <distributionManagement> 
+    <site> 
+      <id>cyc-dev-center</id> 
+      <url>http://dev.cyc.com/</url> 
+    </site>
+  </distributionManagement>
+  
+  <!-- ====  Configuration  ==================================================================== -->
+  
+  <modules>
+    <module>cycconcepts</module>
+    <module>lightweightresultset</module>
+    <module>textprocessing</module>
+  </modules>
+  
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <!--
+          Versions of this plugin earlier than 0.9.0 may cause throw
+          accessExternalSchema errors on Java 8.
+          http://stackoverflow.com/a/26349908/786623
+          -->
+          <groupId>org.jvnet.jaxb2.maven2</groupId>
+          <artifactId>maven-jaxb2-plugin</artifactId>
+          <version>0.10.0</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>generate</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <forceRegenerate>false</forceRegenerate>
+            <verbose>false</verbose>
+          </configuration>
+        </plugin>
+        
+      </plugins>
+    </pluginManagement>
+  </build>
+  
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>

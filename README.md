@@ -9,4 +9,6 @@ These resources are available on the web under:
 * Cyc DTDs: <http://dev.cyc.com/dtd/>
 * Cyc XSL: <http://dev.cyc.com/xsl/>
 
+Additionally, JAXB projects are available to facilitate XML processing in Java.
+
 
